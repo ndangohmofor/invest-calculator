@@ -15,5 +15,9 @@ export class UserInputComponent {
   expectedReturn = '10';
   onSubmit() {
     console.log('Form submitted');
+    console.log('Initial Investment:', this.initialInvestment);
+    console.log('Annual Investment:', this.annualInvestment);
+    console.log('Duration:', this.duration);
+    console.log('Expected Return:', this.expectedReturn);
   }
 }
