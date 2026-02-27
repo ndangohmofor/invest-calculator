@@ -10,6 +10,6 @@ import { CurrencyPipe } from '@angular/common';
   styleUrl: './investment-results.component.css',
 })
 export class InvestmentResultsComponent {
-  // results = input<>();
-  @Input() results?: IInvestmentResult[] = [];
+  results = input<IInvestmentResult[]>();
+  // @Input() results?: IInvestmentResult[] = [];
 }
