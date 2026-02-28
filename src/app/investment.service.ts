@@ -5,7 +5,7 @@ import { IInvestmentInput, IInvestmentResult } from './investment-input.model';
   providedIn: 'root',
 })
 export class InvestmentService {
-  resultsData?: IInvestmentResult[];
+  resultsData = signal<IInvestmentResult[] | undefined>(undefined);
   calculateInvestmentResults(data: IInvestmentInput) {
     const { initialInvestment, duration, annualInvestment, expectedReturn } =
       data;
